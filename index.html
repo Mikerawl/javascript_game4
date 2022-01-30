@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike's Homework #4</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <!-- this displays the do you want to start a test. -->
+        <h1>Mini Coding Quiz</h1>
+        <h3 id="countdown"></h3>
+      </header>
+      <!-- // WHEN I click the start button
+// THEN a timer starts and I am presented with a question -->
+      <section id="welcome">
+        <h2 class="welcome">Click 'Start' to Begin</h2>
+        <button id="start-quiz">Start</button>
+      </section>
+
+      <section id="question-bank">
+        <div id="question-item">here is a question</div>
+        <button class="answer-button" id="answer-true" value="1">True</button>
+        <button class="answer-button" id="answer-false" value="0">False</button>
+        <div id="checked-answer"></div>
+      </section>
+
+      <section style="display: none" id="end-game">
+        <h3>You have finnished the game!</h3>
+        <form>
+          <p>Your score is:<span id="game-score"></span></p>
+          <input type="text" name="initials" id="initials" value="" />
+          <button type="submit" id="score-submit">save</button>
+        </form>
+      </section>
+    </div>
+    <!-- closing container-->
+
+    <script src="./assets/script.js"></script>
+    
+  </body>
+</html>
